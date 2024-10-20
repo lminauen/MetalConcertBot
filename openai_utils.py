@@ -49,7 +49,7 @@ def get_response(request = ""):
     if not request:
         return
 
-    write_log(request, "User Input")
+    write_log(request, "User")
 
     # Query OpenAI API
     completion = openai_client.chat.completions.create(
@@ -104,17 +104,17 @@ def get_response(request = ""):
             ]
         }
 
-        write_log(completion_message["messages"], "Tool call response")
+        write_log(completion_message["messages"], "System")
 
         completion = openai_client.chat.completions.create(
             model = MODEL,
             messages = completion_message["messages"]
         )
 
-        write_log(completion.choices[0].message, "AI response")
+        write_log(completion.choices[0].message, "OpenAI")
         response = completion.choices[0].message.content
     else:
-        write_log(completion.choices[0].message, "AI response")
+        write_log(completion.choices[0].message, "OpenAI")
         response = completion.choices[0].message.content
 
     return response
