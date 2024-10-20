@@ -55,6 +55,5 @@ async def regular_check():
     else:
         write_log("User not found.", "System")
 
-
 client.run(DISCORD_BOT_TOKEN)
 
