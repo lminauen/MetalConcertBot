@@ -22,7 +22,7 @@ async def on_message(message):
     # Only respond to DMs
     if isinstance(message.channel, discord.DMChannel):
         response = get_response(message.content)
-        # empty messages not allowed by discord
+        # Empty messages not allowed by discord
         if response:
             await message.channel.send(response)
     return
