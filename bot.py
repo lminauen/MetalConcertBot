@@ -19,6 +19,7 @@ async def on_ready():
 
     # Schedule regular check for sunday morning
     scheduler.add_job(regular_check, 'cron', day_of_week='sun', hour=9, minute=30)
+    scheduler.start()
 
 
 # Responding to DMs
