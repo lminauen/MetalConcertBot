@@ -50,5 +50,6 @@ INTERESTS = [
     "Eluveitie",
     "Xandria",
     "Nightwish",
+    "Eclipse",
     "Amaranthe"
 ]
