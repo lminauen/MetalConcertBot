@@ -51,5 +51,6 @@ INTERESTS = [
     "Xandria",
     "Nightwish",
     "Eclipse",
-    "Amaranthe"
+    "Amaranthe",
+    "Bloodbound"
 ]
