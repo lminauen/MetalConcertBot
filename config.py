@@ -49,5 +49,6 @@ INTERESTS = [
     "Frozen Crown",
     "Eluveitie",
     "Xandria",
-    "Nightwish"
+    "Nightwish",
+    "Eclipse"
 ]
